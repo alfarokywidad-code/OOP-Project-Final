@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/754a3808be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- !HEADER -->
+    <header class="header">
+
+        <!-- ?LOGO -->
+        <a href="" class="logo">
+            <span class="logo-icon">R.</span>
+            <span class="title-logo">roam</span>
+        </a>
+        <!-- ?NAVIGATION -->
+        <nav class="nav">
+            <a href="" class="nav-link active">Your fleet</a>
+            <a href="" class="nav-link">Add a vehicle</a>
+        </nav>
+        <!-- ?STUDIO -->
+        <div class="studio">
+            <span class="studio-dot"></span>
+            <span>Your rental studio</span>
+        </div>
+
+    </header>
+
+    <!-- !MAIN -->
+    <main>
+        <!-- ?HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-small">LESS ADMIN. MORE ADVENTURE.</p>
+                <h1>A good ride.<br>A better day.</h1>
+                <p class="hero-text">Keep your fleet moving, one journey at a time.</p>
+            </div>
+
+            <div class="hero-image">
+                <img src="./public/images/car-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <!-- !CARDS THREE -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-bars color"></i>
+                </div>
+                <div>
+                    <p>Total vehicles</p>
+                    <strong id="totalVehicles">0</strong>
+                </div>
+                <span>Your collection</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check color"></i>
+                </div>
+                <div>
+                    <p>Ready to go</p>
+                    <strong id="availableVehicles">0</strong>
+                </div>
+                <span>Available now</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-road color"></i>
+                </div>
+
+                <div>
+                    <p>Out exploring</p>
+                    <strong id="rentedVehicles">0</strong>
+                </div>
+                <span>Currently rented</span>
+            </div>
+        </section>
+        <!-- !VEHICLES SECTION -->
+        <section class="fleet-section">
+
+            <!-- ?ADD VEHICLE FORM -->
+            <div class="add-vehicle">
+
+                <div class="add-title">
+                    <span class="plus">+</span>
+                    <div>
+                        <h2>Grow your fleet</h2>
+                        <p>A new ride. A new possibility.</p>
+                    </div>
+                </div>
+
+                <form id="vehicleForm">
+
+                    <div class="form-group">
+                        <label for="vehicleName">Vehicle name</label>
+                        <input type="text" id="vehicleName" placeholder="e.g. Peugeot 208">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vehicleType">Vehicle type</label>
+
+                        <select id="vehicleType">
+                            <option value="">Choose a type</option>
+                            <option value="Car">Car</option>
+                            <option value="Motorcycle">Motorcycle</option>
+                            <option value="Bicycle">Bicycle</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dailyPrice">Daily price</label>
+                        <input type="number" id="dailyPrice" placeholder="e.g. 250">
+                    </div>
+                    <button type="submit" class="add-button">+ Add Vehicle</button>
+
+                </form>
+
+                <!-- ?PRICING INFORMATION -->
+                <div class="pricing-info">
+                    <h3>A little clarity on pricing</h3>
+                    <p>Cars include a 100 MAD extra fee.</p>
+                    <p>Motorcycles include a 30 MAD extra fee.</p>
+                    <p>Bicycles have no extra fee.</p>
+                </div>
+
+                <!-- ?BOTTOM MESSAGE -->
+                <div class="fleet-message">
+                    <h3>Ready for the next chapter?</h3>
+                    <p>Let's get moving.</p>
+                </div>
+
+            </div>
+
+
+            <!-- ?FLEET -->
+            <div class="fleet">
+
+                <div class="fleet-header">
+
+                    <div>
+                        <p class="section-label">THE COLLECTION</p>
+                        <h2>Your fleet<span class="count">0</span></h2>
+                    </div>
+
+                    <div class="filters">
+                        <div class="type-filters">
+
+                            <button class="filter" type="button">All rides</button>
+                            <button class="filter" type="button">Cars</button>
+                            <button class="filter" type="button">Motorcycles</button>
+                            <button class="filter" type="button">Bicycles</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ?SEARCH AND STATUS -->
+                <div class="fleet-tools">
+
+                    <div class="search-box">
+                        <input type="text" id="searchVehicle" placeholder="Find a vehicle...">
+                    </div>
+
+                    <div class="status-box">
+                        <select id="statusFilter">
+                            <option value="all">Any status</option>
+                            <option value="available">Available</option>
+                            <option value="rented">Rented</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- ?VEHICLE CARDS -->
+                <div id="vehiclesContainer" class="vehicles-container">
+                    <!--  JavaScript -->
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>

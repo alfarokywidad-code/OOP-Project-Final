@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f3;
+
+}
+
+.header {
+    width: 87%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ?LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5f9cc8;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f9cc8;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+/* ?NAVIGATION */
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #8a968f;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.nav-link.active {
+    color: #93bad5;
+    font-weight: bold;
+    border-bottom: 2px solid #93bad5;
+
+}
+
+/* STUDIO */
+.studio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #565757;
+}
+
+.studio-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #93bad5;
+}
+
+/*? HERO*/
+
+.hero {
+    width: 87%;
+    min-height: 275px;
+    margin: 15px auto 25px;
+    padding: 35px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #93bad5;
+    background: linear-gradient(90deg, rgba(185, 217, 240, 1) 26%, rgba(2, 41, 149, 1) 70%, rgba(2, 22, 77, 1) 100%);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.hero-small {
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    line-height: 0.95;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+.hero-text {
+    color: #718077;
+    font-size: 14px;
+}
+
+.hero-image img {
+    width: 560px;
+}
+
+
+.cards {
+    width: 87%;
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    min-height: 95px;
+    background-color: white;
+    border: 1px solid #e5e5df;
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+
+.card span {
+    margin-left: auto;
+    color: #9b9b8f;
+    font-size: 14px;
+}
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 13px;
+    background-color: #c2d7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+
+
+.card p {
+    color: #8a968f;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.card strong {
+    font-size: 25px;
+    color: #010e2e;
+}
+
+.color {
+    color: #454646;
+}
+
+/* !VEHICLES SECTION */
+.fleet-section {
+    width: 87%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 30px;
+}
+
+/* ?ADD VEHICLE */
+.add-vehicle {
+    background-color: white;
+    border: 1px solid #e5e5df;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.add-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.plus {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.add-title h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.add-title p {
+    color: #8a968f;
+    font-size: 12px;
+}
+
+/* ?FORM */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #173f36;
+}
+
+.add-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #02223a;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    opacity: 0.7;
+}
+
+/* ?PRICING INFORMATION */
+.pricing-info {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5df;
+}
+
+.pricing-info h3 {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.pricing-info p {
+    color: #8a968f;
+    font-size: 11px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+/* ?BOTTOM MESSAGE */
+.fleet-message {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #eef4eb;
+    border-radius: 12px;
+}
+
+.fleet-message h3 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+.fleet-message p {
+    color: #718077;
+    font-size: 11px;
+}
+
+/* ?FLEET */
+.fleet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.section-label {
+    color: #9a9a8d;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.fleet-header h2 {
+    font-size: 28px;
+}
+
+.count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+    background-color: #c1dcef;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* ?FILTERS */
+.type-filters {
+    display: flex;
+    background-color: #c1dcef;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.filter {
+    border: none;
+    background: transparent;
+    padding: 9px 13px;
+    border-radius: 7px;
+    color: #65756c;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: white;
+    color: #02223a;
+}
+
+/* ?SEARCH AND STATUS */
+.fleet-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 12px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #173f36;
+}
+
+.status-box select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    color: #65756c;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.status-box select:focus {
+    border-color: #173f36;
+}
+
+/* ?VEHICLES CONTAINER */
+.vehicles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* ?VEHICLE CARD */
+
+.vehicle-card {
+    background-color: white;
+    border: 1px solid #e5e5df;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.vehicle-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.vehicle-card p {
+    color: #8a968f;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.vehicle-card .vehicle-availability {
+    color: #02223a;
+    font-weight: bold;
+}
+
+.rental-days {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+    margin: 8px 0 12px;
+}
+
+.rental-days:focus {
+    border-color: #020f33;
+}
+
+.vehicle-card button {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 10px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.rent-button {
+    background-color: #02223a;
+    color: white;
+}
+
+.return-button {
+    background-color: #c1dcef;
+    color: #02223a;
+}
+
+.estimate-button {
+    background-color: #eef4eb;
+    color: #173f36;
+}
+
+.remove-button {
+    background-color: #f1e5e5;
+    color: #7a4444;
+}
+
+.vehicle-card button:hover {
+    opacity: 0.7;
+}
+
+.vehicle-message {
+    margin-top: 10px;
+    min-height: 15px;
+    color: #173f36;
+    font-size: 11px;
+}
+
+/* ?RESPONSIVE */
+@media (max-width: 1000px) {
+    .fleet-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        width: 92%;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .hero {
+        width: 92%;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+
+    .cards {
+        width: 92%;
+        grid-template-columns: 1fr;
+    }
+
+    .fleet-section {
+        width: 92%;
+    }
+
+    .fleet-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .fleet-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .vehicles-container {
+        grid-template-columns: 1fr;
+    }
+}
